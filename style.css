@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10% auto 10%;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "h h h h h h h h h h" 
+    "m m m c c c c c c c" 
+    "f f f f f f f f f f"
+}
+
+.container div {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
